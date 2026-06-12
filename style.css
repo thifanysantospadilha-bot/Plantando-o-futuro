@@ -1,0 +1,51 @@
+/* ==========================================================================
+   1. VARIÁVEIS DE DESIGN (DESIGN SYSTEM)
+   ========================================================================== */
+:root {
+    /* Paleta de Cores */
+    --cor-primaria: #2e7d32;       /* Verde Folha (Vitalidade e Natureza) */
+    --cor-primaria-escura: #1e4620;/* Verde Floresta Escuro */
+    --cor-primaria-clara: #e8f5e9; /* Verde Menta Suave (Fundos leves) */
+    --cor-secundaria: #a0522d;     /* Terracota (Conexão com a terra/plantio) */
+    --cor-secundaria-escura: #8b4513; /* Marrom Profundo */
+    --cor-fundo: #f9fbf9;          /* Areia Suave / Off-White */
+    --cor-texto: #2c3e2e;          /* Grafite esverdeado para leitura confortável */
+    --cor-texto-claro: #666666;
+    --cor-branca: #ffffff;
+    
+    /* Tipografia e Espaçamento */
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --borda-raio: 8px;
+    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --sombra-forte: 0 8px 24px rgba(46, 125, 50, 0.15);
+    --transicao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==========================================================================
+   2. RESET E ESTILOS GLOBAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   3. LAYOUT & COMPONENTES REUTILIZÁVEIS
+   ========================================================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
